@@ -1,0 +1,133 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/mag"))()
+local Main = Library.Category("Camlock", "Main Code", Color3.fromRGB(0, 204, 204))
+Main:Section("RxcePH")
+Main:Toggle(
+    "Enable",
+    function(State) loadstring(game:HttpGet("https://raw.githubusercontent.com/A1rxgdhevve/A1rxgdhevve/main/GwapoRxcePH"))()
+        if State == true then
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+        else
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(18)
+        end
+    end
+)
+Main:Box(
+    "prediction ",
+    "0.144627",
+    function(text)
+        print(text)
+    end
+)
+Main:Dropdown(
+    "Aim Type",
+    {"Look (Legit)", "BLANT", ""},
+    function(update)
+        print(update)
+    end
+)
+ 
+Main:Slider(
+    "X Offset",
+    0,
+    0.144627,
+    true,
+    function(numbers)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = numbers
+    end
+)
+ 
+Main:Slider(
+    "Y Offset",
+    0,
+    0.144627,
+    true,
+    function(numbers)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = numbers
+    end
+)
+ 
+Main:Slider(
+    "Z Offset",
+    0,
+    0.144627,
+    true,
+    function(numbers)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = numbers
+    end
+)
+ 
+Main:Toggle(
+    "Op Mobile silent",
+    function(State) getgenv().Silent = {
+    Settings = {
+        Enabled = true,
+        AimPart = "UpperTorso",
+        Prediction = 0.1433,
+        WallCheck = true,
+        Visualize = true,
+        AutoPrediction = true,
+    },
+    FOV = {
+        Enabled = true,
+        Size = 30,
+        Filled = false,
+        Thickness = 0.66,
+        Transparency = 0.9,
+        Color = Color3.fromRGB(255,255,255),
+    },
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CyberPlaysYT/Aura-x-update/main/Aura%20x%20updated", true))()
+ 
+ 
+        if State == true then
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+        else
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(18)
+        end
+    end
+)
+ 
+local Main = Library.Category("Visuals", "Main Code", Color3.fromRGB(0, 204, 204))
+ 
+Main:Slider(
+    "Shake",
+    0,
+    11,
+    true,
+    function(numbers)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = numbers
+    end
+)
+ 
+Main:Toggle(
+    "Box esp",
+    function(State)
+        if State == true then
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+        else
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(18)
+        end
+    end
+)
+ 
+Main:Toggle(
+    "Disable outline FOV",
+    function(State)
+        if State == true then
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+        else
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(18)
+        end
+    end
+)
+ 
+Main:Toggle(
+    "Enable outline FOV",
+    function(State)
+        if State == true then
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+        else
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(18)
+        end
+    end
+)
